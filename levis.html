@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda Levi's</title>
+</head>
+<body>
+
+  <header>
+    <a href="#inicio">
+      <img src="levis.png" alt="levis" />
+    </a>
+
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#hombres">Hombres</a>
+      <a href="#mujer">Mujer</a>
+      <a href="#kids">Kids</a>
+      <a href="#rebajas">Rebajas</a>
+      <a href="#colecciones">Colecciones</a>
+      <a href="#cuenta">Cuenta</a>
+      <a href="#carrito">Carrito</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio">
+      <h1>Inicio</h1>
+      <p>Bienvenido a Levi's</p>
+    </section>
+
+    <hr />
+
+    <section id="hombres">
+      <h2>Hombres</h2>
+      <table>
+        <tr>
+          <td>
+            <img src="pantalonh.jpg" alt="pantalon" />
+            <h4>Pantalon de Hombre</h4>
+          </td>
+          <td>
+            <img src="playerah.jpg" alt="playera" />
+            <h4>Playera de Hombre</h4>
+          </td>
+          <td>
+            <img src="tenis.jpg" alt="tenis" />
+            <h4>Tenis de Hombre </h4>
+          </td>
+        </tr>
+      </table>
+
+      <hr />
+
+      <section id="mujeres">
+      <h2>Mujeres</h2>
+      <table>
+        <tr>
+          <td>
+            <img src="tenism.jpg" alt="Teneis de mujer" />
+            <h4>Tenis de Mujer</h4>
+          </td>
+          <td>
+            <img src="pantalonm.jpg" alt="Pantalon" />
+            <h4>Pantalon de Mujer</h4>
+          </td>
+          <td>
+            <img src="blusa.jpg" alt="Blusa" />
+            <h4>Blusa</h4>
+          </td>
+        </tr>
+      </table>
+
+      <hr />
+
+      <section id="kids">
+      <h2>Kids</h2>
+      <table>
+        <tr>
+          <td>
+            <img src="pantalonk.jpg" alt="pantalon" />
+            <h4>Pantalon de Niño</h4>
+          </td>
+          <td>
+            <img src="falda.jpg" alt="falda" />
+            <h4>Flada de mezclilla</h4>
+          </td>
+          <td>
+            <img src="playerak.jpg" alt="playera" />
+            <h4>playera para Niños</h4>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <hr />
+    <section id="rebajas">
+       <img src="levis.png" alt="levis" />
+      <h2>Rebajas</h2>
+      <table>
+        <tr>
+          <td>
+            <img src="revajas1.jpg" alt="Rebaja" />
+          </td>
+          <td>
+            <img src="revajas2.jpg" alt="playera" />
+          </td>
+          <td>
+            <img src="revajas3.jpg" alt="tenis" />
+          </td>
+        </tr>
+      </table>
+      
+      <section id="colecciones">
+      <h2>Colecciones</h2>
+      <table>
+        <tr>
+          <td>
+            <img src="coleccion1.jpg" alt="Rebaja" />
+            <h4>Coleccion Hombrey Mujer</h4>
+          </td>
+          <td>
+            <img src="coleccion2.jpg" alt="playera" />
+            <h4>Coleccion Mujer</h4>
+          </td>
+          <td>
+            <img src="coleccion3.jpg" alt="tenis" />
+            <h4>Coleccion Hombre y Mujer </h4>
+          </td>
+        </tr>
+      </table>
+
+    <section id="cuenta">
+      <h2>Iniciar sesión</h2>
+      <form onsubmit="event.preventDefault(); document.getElementById('msg-login').textContent = 'Bienvenido'; this.reset();">
+        <div>
+          <label for="login-email">Correo electrónico:</label>
+          <input id="login-email" type="email" required />
+        </div>
+        <br />
+        <div>
+          <label for="login-pass">Contraseña:</label>
+          <input id="login-pass" type="password" required />
+        </div>
+        <br />
+        <button type="submit">Entrar</button>
+      </form>
+      <p id="msg-login"></p>
+    </section>
+
+    <hr />
+
+    <section id="cuenta">
+      <h2>Registro</h2>
+      <!--Muestra el mensaje de gracias-->
+      <form onsubmit="event.preventDefault(); document.getElementById('msg-registro').textContent = 'Gracias por registrarse'; this.reset();">
+        <div>
+          <label for="reg-name">Nombre completo:</label>
+          <input id="reg-name" type="text" required />
+        </div>
+        <br />
+        <div>
+          <label for="reg-email">Correo electrónico:</label>
+          <input id="reg-email" type="email" required />
+        </div>
+        <br />
+        <div>
+          <label for="reg-pass">Contraseña:</label>
+          <input id="reg-pass" type="password" required />
+        </div>
+        <br />
+        <button type="submit">Crear cuenta</button>
+      </form>
+      <p id="msg-registro"></p>
+    </section>
+  </main>
+
+  <hr />
+
+  <footer>
+    <p>Hernandez Cuellar Emiliano| 5-J | 0850</p>
+  </footer>
+
+</body>
+</html>
